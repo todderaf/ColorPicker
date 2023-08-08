@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,19 +13,25 @@
     </header>
     <main>
         <div id="controls" class="controls">
-            <input id=color-picker type="color">
-            <select id="dropdown" onchange="selectOption()">
-                <option>Monochrome</option>
-                <option>Monochrome-dark</option>
-                <option>Monochrome-light</option>
-                <option>Analogic</option>
-                <option>Complement</option>
-                <option>Analogic-complement</option>
-                <option>Triad</option>
-                <option>Quad</option>
+           <div class="picker-container">
+          <input id=
+                   "color-picker" type="color" >
+          <span class="picker-label">label goes here</span>
+      </div>
+            <select id="dropdown">
+                <option value="monochrome">Monochrome</option> 
+                <option value="complement">Complement</option>
+              <option value="analogic">Analogic</option>
+                <option value="analogic-complement">
+                  Analogic-complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
             </select>
-            <button type="submit" class="submit-btn">Get color Scheme</button>
+            <button type="submit" class="submit-btn" id="submit-btn">Get color Scheme</button>
         </div>
+      <div id="show-colors" class="show-colors">
+        
+      </div>
     </main>
     <script src="index.js"></script>
 </body>
