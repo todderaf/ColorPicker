@@ -13,19 +13,20 @@ html, body {
 
 h1 {
     background-color: antiquewhite;
-    padding: 15px 25px;
+    padding: 1.25rem 4.17rem;
     margin: 0;
     letter-spacing: .5em;
 }
 
 main {
-    width: 95%;
+  width: 95%;
+  border: 1px solid blue;
+  margin: 0 auto 1em auto;
 }
 #color-picker {
     width: 68px;
     height: 68px;
     border-radius: 6px;
-    margin-left: 1em;
 }
 
 #dropdown {
@@ -40,6 +41,7 @@ main {
     background-color: #FFFFFF;
     border: 1px solid gray;
     border-radius: 15px;
+   cursor: pointer;
 
 }
 
@@ -47,15 +49,48 @@ main {
     width: 125px;
     color: #374151;
     padding: 20px 10px;
-
+   
 }
 
 .controls {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin: 10px 5px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto)); 
+    margin: 10px 0;
     grid-row-gap: .5em;
     grid-column-gap: 20px;
+   align-items: center;
+   justify-content: start;
+   border: 1px solid red;
+}
 
+.show-colors {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  
+}
+.color-box {
+/*   background-color: red; */
+  border: 1px solid black;  
+  width: 6.7vw;
+  height:70vh;
+  position: relative;
+}
 
+.color-text {
+  position: absolute;
+  bottom: .5em;
+  font-size: 1.5em;
+  left: 1.4em;
+}
+
+.picker-container {
+  display: flex;
+  align-items: center;
+}
+
+.picker-label {
+  font-size: 1.5em;
+  font-weight: 400;
+  padding-left: 1em;
 }
